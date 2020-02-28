@@ -1,0 +1,105 @@
+.protHome{
+  overflow: hidden;
+  position: relative;
+  @keyframes rotate{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+  }
+  .water{
+    background-image: linear-gradient(90deg,#5d66f8,#57b2fe);
+    position: relative;
+    height: 130%;
+    width: 100%;
+  }
+  .ripple{
+    position: absolute;
+    width: 140%;
+    height: 250%;
+    background: #fff;
+    border-radius: 40%;
+    animation: rotate 9s linear infinite;
+    margin-top: 20%;
+    margin-left: -20%;
+  }
+  .homeHead{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    height: 60px;
+    width: 100%;
+    .headLogo{
+      width: 20%;
+      padding: 1%;
+    }
+    .userLoginOut{
+      display: flex;
+      float: right;
+      padding: 2% 1%;
+      align-items: center;
+      width: 40%;
+      justify-content: flex-end;
+      .userImg{
+        width: 5%;
+      }
+      span{
+        margin: 0 2%;
+        color: #ffffff;
+        font-size: 14px;
+      }
+      .outBtn{
+        color: #ffffff;
+        margin-right: 2%;
+      }
+    }
+  }
+  .homeBody{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    .line{
+      width: 100%;
+      height: 46%;
+      margin: 1%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .nodeCenter{
+        width: 15%;
+        height: 100%;
+        box-shadow: 0 7px 26px 0 rgba(0,0,0,0.09);
+        border-radius: 6px;
+        background-color: #ffffff;
+        cursor: pointer;
+        .centerImg{
+          display: block;
+          height: 30%;
+          margin-top: 30%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .centerTitle{
+          font-size: 20px;
+          color: #13284C;
+          text-align: center;
+          display: block;
+          margin-top: 10%;
+          cursor: pointer;
+        }
+        .centerDetail{
+          font-size: 14px;
+          color: #5A6579;
+          text-align: center;
+        }
+      }
+      .nodeCenter:hover{
+        background-color: #86cbff;
+        label{
+          color: #ffffff;
+        }
+      }
+    };
+
+  }
+}
+
